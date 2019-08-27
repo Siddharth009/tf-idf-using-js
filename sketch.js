@@ -1,10 +1,9 @@
-
 var txt = [];
 var counts = {};
 var keys = [];
 var allwords = [];
 
-var files = ['hp.txt','laptop.txt', 'lenevo.txt', 'dell.txt'];
+var files = ['file3.txt','file2.txt','file1.txt', 'laptop.txt', 'lenevo.txt'];
 
 function preload() {
   for (var i = 0; i < files.length; i++) {
@@ -76,5 +75,39 @@ function setup() {
     createDiv(key + " " + counts[key].tfidf);
   }
 
-  noCanvas();
+
+    var category = (keys[0]);
+   document.getElementById('category').innerHTML= category;
+   noCanvas();
 }
+
+
+// keywords for garbage { garbage, 
+//   dust, dirt, heap, bags, dump, dirty, metals, 
+//   scrapes, trash, junk, filth, disposal, rot, carcass, dead, 
+//   dead animal, waste product, waste matter, waste material, waste,
+//    substance, waste}
+
+
+// keywords for drainage { leak, water, waterr leak, canal, flow, pipeline, burst, leakage, sewage, dhal, pool, trench} 
+
+//  for (var i = 0; i < keys.length; i++) {
+  //   // var keymax = 1;
+  //   // if(keys[i] > keymax) {
+  //   //    keymax = keys[i];
+  //   //  }
+  //   
+
+  //  }
+  //  console.log(keymax);
+
+
+  
+ 
+  // //  console.log( Math.max.apply(null , keys[i])) ; 
+
+ 
+
+
+
+
